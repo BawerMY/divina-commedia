@@ -24,13 +24,13 @@ export default function Libro() {
                 </div>
             </div>
             </div>
-            {read && <div className='fixed top-0 left-0 w-[100vw] h-[100vh] bg-[#000000dd] flex justify-center items-center'>
+            {read && <div onClick={() => setRead(null)} className='fixed top-0 left-0 w-[100vw] h-[100vh] bg-[#000000dd] flex justify-center items-center'>
                     <button className='fixed top-4 right-4' onClick={() => setRead(null)}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" className="bi bi-x-lg" viewBox="0 0 16 16">
                             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                         </svg>
                     </button>
-                <div className='overflow-hidden'>
+                <div onClick={(event) => event.stopPropagation()} className='overflow-hidden'>
                     <ul className='h-[80vh] bg-[#ffffffbb] rounded-[8px] py-8 px-4 overflow-y-scroll pac text-[32px]'>
                         {read.children.map((t, n) => <><li key={t}>-{n+1} {t.children.map((v) => <li key={t+"-"+v}>{v.text}</li>)}</li><br/></>)}
                     </ul>

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home';
 import Libro from './Pages/Libro';
+import Search from './Pages/Search';
 import { useState } from 'react';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <img className="fixed h-[100vh] w-[100vw] -z-10" src="bg.jpg" alt="" />
       {page[0]==0 && page[1]==0 && <Home />}
       {page[0]==1 && page[1]==0 && <Libro />}
+      {page[0]==-1 && page[1]==0 && <Search />}
       {page[0]>-1 && page[1]==0 && <svg className="fixed -translate-x-[50%] -translate-y-[50%] top-[50vh] left-[12.5vw] opacity-20 w-64" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
       </svg>}
