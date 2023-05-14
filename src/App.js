@@ -8,7 +8,8 @@ import Header from './Pages/Header';
 import { useState } from 'react';
 
 function App() {
-  const [page, setPage] = useState([0, 0])
+  const [foot, setfoot] = useState(false)
+  const [page, setPage] = useState([0, 1])
   document.onkeydown = (e) => {
     if (e.keyCode === 38 && page[1]<1 && page[0]==0) setPage([page[0], page[1]+1])
     else if (e.keyCode === 40 && page[1]>-1 && page[0]==0) setPage([page[0], page[1]-1])
@@ -35,7 +36,21 @@ function App() {
       {page[1]<1 && page[0]==0 && <svg className="fixed -z-10 translate-x-[50%] -translate-y-[50%] top-[15vh] right-[50vw] opacity-20 w-64" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
       </svg>}
-      <a className='fixed bottom-0 right-0' href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com/</a>
+      <img onClick={() => setfoot(!foot)} className="cursor-pointer fixed w-16 bottom-4 right-0 z-10" src="foot.png" alt="FOOTER" />
+            {foot && <div className="flex fixed top-0 left-0 h-[100vh] w-full items-center justify-center">
+                <div className="bg-sky-400 border-sky-600 border-2 rounded-3xl py-8 px-4 text-center">
+                    <h1 className="font-bold text-[32px] mb-4">Footer</h1>
+                    <a href="https://github.com/fabiovalse/Divina-Commedia-Visualization/blob/master/divina_commedia.json"><span className="font-bold">Data:</span> github.com/fabiovalse/Divina-Commedia-Visualization</a>
+                    <h1 className="font-bold mt-4">Images and Descriptions</h1>
+                    <a href="https://divinacommedia.weebly.com/">https://divinacommedia.weebly.com/</a><br />
+                    <a href="https://it.wikipedia.org/">Wikipedia</a><br />
+                    <a href="https://quotidianodibari.it/le-grotte-di-acheronte/">https://quotidianodibari.it/le-grotte-di-acheronte/</a><br />
+                    <a href="https://www.fanpage.it/cultura/divina-commedia-l8-aprile-1300-dante-alighieri-si-perde-nella-selva-oscura/">https://www.fanpage.it/cultura/divina-commedia-l8-aprile-1300-dante-alighieri-si-perde-nella-selva-oscura/</a>
+                    <h1 className="font-bold mt-4">Background and Foot Image</h1>
+                    <a href="https://www.flaticon.com/free-icons/step" title="step icons">Step icons created by Freepik - Flaticon</a><br />
+                    <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com/</a>
+                </div>
+            </div>}
     </>
   );
 }
