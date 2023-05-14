@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Libro from './Pages/Libro';
 import Search from './Pages/Search';
 import Strati from './Pages/Strati';
+import Header from './Pages/Header';
 import { useState } from 'react';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       {page[0]==1 && page[1]==0 && <Libro />}
       {page[0]==-1 && page[1]==0 && <Search />}
       {page[0]==0 && page[1]==-1 && <Strati />}
+      {page[0]==0 && page[1]==1 && <Header />}
       {page[0]>-1 && page[1]==0 && <svg className="fixed -z-10 -translate-x-[50%] -translate-y-[50%] top-[50vh] left-[12.5vw] opacity-20 w-64" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
       </svg>}

@@ -21,7 +21,7 @@ export default function Strati() {
                         </div>
                     </div>
                 </div>
-                <div><img className="w-[256px]" src="rose.svg" alt="Candida Rosa"/></div>
+                <div><img className="w-[384px]" src="rose.svg" alt="Candida Rosa"/></div>
                 <div className="border-t-2 border-black rounded-t-[100%] w-[100%] text-center py-32">CIELO CRISTALLINO o PRIMO MOBILE</div>
                 <div className="border-t-2 border-black rounded-t-[100%] w-[100%] text-center py-32">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐CIELO delle STELLE FISSE⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐</div>
                 <div className="border-t-2 border-black rounded-t-[100%] w-[100%] text-center py-32">CIELO di SATURNO</div>
@@ -34,7 +34,7 @@ export default function Strati() {
                 <div className="border-t-2 border-black rounded-t-[100%] w-[100%] text-center py-32 bg-gradient-to-b from-orange-500 via-yellow-500 via-10% to-transparent to-75%">SERRA DEL FUOCO</div>
             </div>
             <div className="flex flex-col items-center bg-gradient-to-b from-cyan-100 from-50% to-amber-900">
-                <div className="border-[1px] border-b-4 border-amber-950 rounded-[100%] bg-lime-600 w-[60%] text-center py-32">Paradiso Terrestre</div>
+                <div className="border-[1px] border-b-4 border-amber-950 rounded-[100%] bg-lime-600 w-[60%] text-center py-32">PARADISO TERRESTRE</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 from-50% to-transparent rounded-b-[100%] w-[65%] text-center py-32">LUSSURIOSI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 from-50% to-transparent rounded-b-[100%] w-[70%] text-center py-32">GOLOSI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 from-50% to-transparent rounded-b-[100%] w-[75%] text-center py-32">AVARI e PRODIGHI</div>
@@ -51,7 +51,7 @@ export default function Strati() {
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[16%] text-center py-32">ANTENORA</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[20%] text-center py-32">CAINA</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[24%] text-center py-32">TRADITORI</div>
-                <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[28%] text-center py-32">POZZO dei GIGANTI</div>
+                <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 via-cyan-700 via-75% to-transparent from-70% rounded-b-[100%] w-[28%] text-center py-32">POZZO dei GIGANTI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[32%] text-center py-32">FALSARI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[36%] text-center py-32">SEMINANTI di DISCORDIE</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[40%] text-center py-32">CONSIGLIERI FRAUDOLENTI</div>
@@ -63,7 +63,7 @@ export default function Strati() {
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[64%] text-center py-32">ADULATORI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[68%] text-center py-32">RUFFIANI e SEDUTTORI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent from-25% to-100% rounded-b-[100%] w-[72%] text-center py-32">FRAUDOLENTI / MALEBOLGE</div>
-                <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[76%] text-center py-32">RIPA DISCOSCESA</div>
+                <div className="border-b-4 border-amber-950 bg-gradient-to-t from-gray-700 text-white to-transparent from-90% rounded-b-[100%] w-[76%] text-center py-32">RIPA DISCOSCESA</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[80%] text-center py-32">BESTEMMIATORI, SODOMITI e USURAI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[84%] text-center py-32">SUICIDI e SCIALACQUATORI</div>
                 <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[88%] text-center py-32">OMICIDI e PREDONI / FLEGETONE</div>
