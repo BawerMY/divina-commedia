@@ -8,6 +8,7 @@ import Header from './Pages/Header';
 import { useState } from 'react';
 
 function App() {
+  const [intro, setintro] = useState(true)
   const [foot, setfoot] = useState(false)
   const [page, setPage] = useState([0, 1])
   document.onkeydown = (e) => {
@@ -15,9 +16,11 @@ function App() {
     else if (e.keyCode === 40 && page[1]>-1 && page[0]==0) setPage([page[0], page[1]-1])
     else if (e.keyCode === 37 && page[0]>-1 && page[1]==0) setPage([page[0]-1, page[1]])
     else if (e.keyCode === 39 && page[0]<1 && page[1]==0) setPage([page[0]+1, page[1]])
+    else if (e.keyCode === 	32) setintro(false)
   }
   return (
     <>
+    {intro && <div className='fixed -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 p-16 bg-sky-700 text-white font-bold text-[24px] rounded-lg text-center'>per navigare utilizzare i tasti direzionali della tastiera<br />(cliccare <span className='bg-gray-800 rounded-md px-2 font-normal'>spazio</span> per chiudere)</div>}
       <img className="fixed h-[100vh] w-[100vw] -z-20" src="bg.jpg" alt="" />
       {page[0]==0 && page[1]==0 && <Home />}
       {page[0]==1 && page[1]==0 && <Libro />}
@@ -49,6 +52,11 @@ function App() {
                     <h1 className="font-bold mt-4">Background and Foot Image</h1>
                     <a href="https://www.flaticon.com/free-icons/step" title="step icons">Step icons created by Freepik - Flaticon</a><br />
                     <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com/</a>
+                    <a href='https://www.avvenire.it/agora/pagine/quellinvidia-per-paolo-e-francesca'>https://www.avvenire.it/agora/pagine/quellinvidia-per-paolo-e-francesca</a>
+                    <a href='https://www.studenti.it/inferno-canto-v-riassunto-commento-canto-paolo-e-francesca.html'>https://www.studenti.it/inferno-canto-v-riassunto-commento-canto-paolo-e-francesca.html</a>
+                    <a href='https://www.vanillamagazine.it/il-mistero-del-conte-ugolino-pratico-il-cannibalismo-sui-suoi-figli/'>https://www.vanillamagazine.it/il-mistero-del-conte-ugolino-pratico-il-cannibalismo-sui-suoi-figli/</a>
+                    <a href='https://informazionecritica.com/2021/05/15/gli-ignavi-di-dante-ovvero-il-canto-di-quei/'>https://informazionecritica.com/2021/05/15/gli-ignavi-di-dante-ovvero-il-canto-di-quei/</a>
+                    <a href='https://annamariaarvia.wordpress.com/2019/12/07/dante-alighieri-inferno-canto-vi-cerbero-vv-7-33/'>https://annamariaarvia.wordpress.com/2019/12/07/dante-alighieri-inferno-canto-vi-cerbero-vv-7-33/</a>
                 </div>
             </div>}
     </>

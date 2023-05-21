@@ -12,7 +12,7 @@ export default function Libro() {
                 </div>
             </div>
             <div className="text-center">
-                <h1 className="text-[72px] h-[108px] mb-8 inf"><span>Pruga</span> <span className="par text-white">torio</span></h1>
+                <h1 className="text-[72px] h-[108px] mb-8 inf"><span>Purga</span> <span className="par text-white">torio</span></h1>
                 <div className="flex flex-wrap gap-1 w-[20vw]">
                     {[...Array(33).keys()].map((n) => <button key={1+"--"+n} onClick={() => setRead(require('../divina_commedia.json').children[0].children[n])} className="bg-[#ffffff50] text-[24px] font-bold inf border-[1px] border-black rounded-[10px] w-[72px] h-[72px]">{n+1}</button>)}
                 </div>

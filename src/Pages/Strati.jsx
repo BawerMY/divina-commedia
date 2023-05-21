@@ -26,6 +26,30 @@ export default function Strati() {
         selva: {
             img: 'https://staticfanpage.akamaized.net/wp-content/uploads/2019/04/dante_7_aprile_8_aprile_selva_oscura_divina_commedia-1200x675.jpg',
             info: "È il luogo simbolico in cui Dante si smarrisce all'inizio del poema (Inf., I, 1 ss.), allegoria del peccato in cui ogni uomo può perdersi nel suo cammino durante questa vita. Non sappiamo dove si trovi precisamente, anche se vari commentatori hanno tentato vanamente di trovarle una collocazione geografica (in Italia, vicino a Firenze, vicino a Gerusalemme...)."
+        },
+        paoloEfrancesca: {
+            img: 'https://www.avvenire.it/c/2021/PublishingImages/64a64a61224245e5a4b89a59633b6f0b/a.jpg?width=1024',
+            info: "Il luogo in cui si trovano è tenebroso e una bufera trascina le anime dei dannati. Pianti, lamenti, strida, bestemmie si sentono provenire dai peccatori che Dante comprende essere i “peccator carnali”, ovvero i lussuriosi. Virgilio indica a Dante alcuni  personaggi del passato che si trovano in questo luogo: Semiramide, Cleopatra, Elena, Paride, Tristano. Ma l’attenzione del poeta è attratta da due anime che volano insieme: sono Paolo Malatesta e Francesca da Rimini. Dante li invita ad avvicinarsi e Francesca narra la loro storia: il cuore gentile di Francesca fece innamorare Paolo, attratto anche dalla bellezza della donna che a sua volta, si innamorò di lui perché Amore pretende che chi è amato contraccambi l’amore. Questa loro colpevolezza condusse entrambi ad una stessa morte: il marito di Francesca, Gianciotto, scoperto l'inganno e nel tentativo di uccidere Paolo trafisse con la spada anche Francesca che volle fargli scudo con il suo corpo."
+        },
+        ugolino: {
+            img: 'https://www.vanillamagazine.it/wp-content/uploads/2018/08/Ugolino-Dante.jpg',
+            info: "Dopo aver allontanato la bocca dal pasto bestiale, il dannato si accinge a raccontare la sua fine. Sa che la narrazione gli procurerà molto dolore, ma è certo che la sua sofferenza sarà compensata dall'infamia procurata al traditore di cui sta rodendo il cranio. Si tratta del conte Ugolino della Gherardesca, il quale, per gli intrighi dell'arcivescovo Ruggieri, ora sua vittima, fu rinchiuso nella torre dei Gualandi, in Pisa, con due figli e due giovani nipoti dove vi rimase prigioniero alcuni mesi e poi fu condannato a morirvi per fame. La disperazione di dover assistere alla tragica fine dei suoi ragazzi lo impietrì dal dolore. Il triste evento si consumò tra il quarto e il sesto giorno; all'ottavo anch'egli morì. Dante allora prorompe in un'invettiva contro Pisa, che si macchiò di un delitto così feroce."
+        },
+        ignavi: {
+            img: 'https://informazionecriticacom.files.wordpress.com/2021/05/canto-3-inferno-sintesi.jpg',
+            info: "Sono mescolate agli angeli che non si schierarono né con Dio né con Lucifero; le anime degli ignavi sono tanto misere che secondo Virgilio non sono degne di essere guardate da Dante troppo a lungo. Dante vede che le anime corrono dietro un'insegna senza significato, che gira vorticosamente su se stessa."
+        },
+        limbo: {
+            img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/MantegnaDescentLimbo.jpg/1024px-MantegnaDescentLimbo.jpg',
+            info: "Il Limbo è definito da Dante il ''primo cerchio che l'abisso cigne'' (Inf. IV,25). Il vocabolo 'Limbus' in latino significa ''orlo'' e nella Commedia equivale ad ''orlo dell'Inferno'', una zona, quindi, non propriamente di pena, ma neppure di beatitudine, o di attesa di essa."
+        },
+        golosi: {
+            img: 'https://annamariaarvia.files.wordpress.com/2019/12/cerbero-immagine.jpg',
+            info: "Dante e Virgilio arrivano al terzo cerchio, dove sono puniti i golosi. Qui una pioggia nera, mista a grandine e neve, cade eternamente sui dannati prostrati nel fango. Questi sono squartati e scuoiati da Cerbero che li assordisce con il suo latrare incessante. Cerbero, il cane a tre teste, è un personaggio del mito e della poesia classica, ritratto con violenza realistica che imprime alla sua figura vitalità animalesca. Dante ne fa un mostro misto di elementi umani e bestiali: ne sottolinea la voracità insaziabile, la crudeltà ferina, le note ripugnanti dell’aspetto (la barba unta e atra)."
+        },
+        avariEprodighi: {
+            img: 'https://divinacommedia.weebly.com/uploads/5/5/2/3/5523249/3444213.jpg',
+            info: "Sono i penitenti che scontano la loro pena nella V Cornice del Purgatorio, colpevoli di eccessivo attaccamento ai beni terreni, sia nel senso della cupidigia sia in quello opposto della prodigalità (sono gli unici peccatori del Purgatorio dantesco a scontare nella stessa Cornice peccati opposti, parallelamente agli avari e prodighi del IV Cerchio dell'Inferno). La pena è identica per entrambe le schiere di penitenti e consiste nell'essere legati e stesi sul pavimento roccioso della Cornice, con le spalle rivolte al cielo e il volto a terra, così come in vita furono rivolti ai beni materiali. Recitano il versetto 25 del Salmo CXVIII, Adhaesit pavimento anima mea («la mia anima si è stesa sul pavimento») e durante il giorno dichiarano esempi di povertà e liberalità, mentre di notte ne ricordano altri di avarizia punita, con voce più o meno alta a seconda dell'intensità del sentimento che li pungola. Dante include tra questi penitenti papa Adriano V (Canto XIX) e il re di Francia Ugo Capeto (Canto XX), entrambi fra gli avari, e il poeta latino Stazio (Canti XXI-XXII), posto fra i prodighi."
         }
     }
     return (
@@ -78,7 +102,7 @@ export default function Strati() {
                     <div onClick={() => setinfo(data.lucifero)} className="bg-red-700 w-[5%] text-center py-32">LUCIFERO</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[20%] text-center py-32">GIUDECCA</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[27.5%] text-center py-32">TOLOMEA</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[30%] text-center py-32">ANTENORA</div>
+                    <div onClick={() => setinfo(data.ugolino)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[30%] text-center py-32">ANTENORA</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[32.5%] text-center py-32">CAINA</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[35%] text-center py-32">TRADITORI</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 via-cyan-700 via-75% to-transparent from-70% rounded-b-[100%] w-[37.5%] text-center py-32">POZZO dei GIGANTI</div>
@@ -101,12 +125,12 @@ export default function Strati() {
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[77.5%] text-center py-32">ERETICI</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[80%] text-center py-32">MURA DELLA CITTA' di DITE / STIGE</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent from-25% to-100% rounded-b-[100%] w-[82.5%] text-center py-32">IRACONDI ED ACCIDIOSI (STIGE)</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-gray-700 text-white to-transparent from-90% rounded-b-[100%] w-[85%] text-center py-32">AVARI E PRODIGHI</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[87.5%] text-center py-32">GOLOSI</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[90%] text-center py-32">LUSSURIOSI</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[92.5%] text-center py-32">LIMBO</div>
+                    <div onClick={() => setinfo(data.avariEprodighi)} className="border-b-4 border-amber-950 bg-gradient-to-t from-gray-700 text-white to-transparent from-90% rounded-b-[100%] w-[85%] text-center py-32">AVARI E PRODIGHI</div>
+                    <div onClick={() => setinfo(data.golosi)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[87.5%] text-center py-32">GOLOSI</div>
+                    <div onClick={() => setinfo(data.paoloEfrancesca)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[90%] text-center py-32">LUSSURIOSI</div>
+                    <div onClick={() => setinfo(data.limbo)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[92.5%] text-center py-32">LIMBO</div>
                     <div onClick={() => setinfo(data.acheronte)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-100% rounded-b-[100%] w-[95%] text-center py-32 via-cyan-700 via-75% to-transparent from-70%">ACHERONTE</div>
-                    <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[97.5%] text-center py-32">IGNAVI</div>
+                    <div onClick={() => setinfo(data.ignavi)} className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-600 to-transparent to-100% rounded-b-[100%] w-[97.5%] text-center py-32">IGNAVI</div>
                     <div className="border-b-4 border-amber-950 bg-gradient-to-t from-amber-950 to-transparent to-100% rounded-b-[100%] w-[100%] text-center py-32">CROSTA TERRESTRE</div>
                     <div onClick={() => setinfo(data.selva)} className="border-b-4 border-cyan-500 bg-gradient-to-t from-lime-500 to-transparent to-100% rounded-b-[100%] w-[100%] text-center py-32">GELUSALEMME / SELVA / COLLE</div>
                 </div>

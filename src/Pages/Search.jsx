@@ -44,7 +44,7 @@ export default function Search() {
       // console.log(p)
     return (
         <div className='flex items-center flex-col pt-24'>
-            <input autoFocus={true} className='w-[800px] px-4 rounded-md py-2 mb-3.5 bg-[#ffffff50] border-black border-[1px] outline-none' placeholder='Search' id='s' onChange={() => setPattern(" "+document.getElementById('s').value)+" "} type="text" />
+            <input autoFocus={true} className='w-[800px] px-4 rounded-md py-2 mb-3.5 bg-[#ffffff50] border-black border-[1px] outline-none' placeholder='Cerca nella divina commedia' id='s' onChange={() => setPattern(" "+document.getElementById('s').value)+" "} type="text" />
             {matches.length>0 && <a>{matches.length} risultati</a>}
             {matches.length>0 && <ul className='flex mt-3.5 w-[817px] flex-wrap gap-2 h-[750px] overflow-y-scroll'>
                 {matches.map((t) =>
